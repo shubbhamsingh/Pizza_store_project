@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Item</title>
+</head>
+<body>
+    <h1>Edit Item</h1>
+    <form action="/items/<%= item.id %>" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" value="<%= item.name %>">
+        <label for="price">Price:</label>
+        <input type="number" id="price" name="price" value="<%= item.price %>">
+        <button type="submit">Update Item</button>
+    </form>
+</body>
+</html>
